@@ -1,0 +1,55 @@
+.cart section{
+    display: flex;
+    margin: 50px;
+}
+.cart section a{
+    padding-right: 250px;
+}
+.cart section p{
+    font-weight: 900;
+}
+.card_li{
+    display: flex;
+    background-color: aliceblue;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.104);
+    width: 90%;
+    border-radius: 20px;
+}
+.li_img{
+    width: 30%;
+}
+.card_li div{
+    display: grid;
+}
+.card_li div ul{
+    position: absolute;
+    display: flex;
+    background-color: var(--orange);
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    width: 20%;
+    padding: 8px;
+    padding-left: 15px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.card_li div ul li{
+    position: relative;
+    margin-right: 10px;
+}
+.card_li div h4{
+    color: var(--orange);
+    margin-top: 50px;
+    margin-left: -60px;
+}
+.card_li h3{
+    margin: 20px;
+}
+.card_ul{
+    position: absolute;
+    margin-left: 20px;
+}
+
+
+

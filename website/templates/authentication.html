@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}authentication{% endblock %}
+{% block content %}
+     <div class="authentication">
+         <img src="{{ url_for('static', filename='img/logo.png') }}" alt="oyibo food">
+         <ul id="main">
+             <li class="auth activa" onclick="login()">Login</li>
+             <li class="auth" onclick="sign_up()">Sign-up</li>
+         </ul>
+     </div>
+     <div id="form1" class="forms form1">
+        <form action="">
+            <h3>E-mail</h3>
+            <input class="input1" type="email" name="email" id="email">
+            <h3 class="password">Password</h3>
+            <input class="input1" type="password" name="password" id="password">
+            <h3 style="color: orangered;">forgot passcode?</h3>
+            <input class="submit-button" value="Submit" type="submit">
+        </form>
+     </div>
+     <div id="form2" class="forms form2">
+        <form action="">
+            <h3>Name</h3>
+            <input class="input1" type="email" name="name" id="name">
+            <h3>E-mail</h3>
+            <input class="input1" type="email" name="e_mail" id="e_mail">
+            <h3 class="password">Password</h3>
+            <input class="input1" type="password" name="password1" id="password1">
+            <h3 class="password">confirm Password</h3>
+            <input class="input1" type="password" name="password2" id="password2">
+            <input class="submit-button" value="Submit" type="submit">
+        </form>
+     </div>
+{% endblock %}

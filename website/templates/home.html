@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+   <nav class="home-nav">
+    <ul>
+        <li onclick="menuFuction()"><ion-icon name="filter"></ion-icon></li>
+        <li><a href="/cart"><ion-icon name="cart"></ion-icon></a></li>
+    </ul>
+   </nav>
+   <div class="nav-items">
+       <ul>
+          <li>
+             <ul>
+                <li></li>
+                <li>profile</li>
+             </ul>
+          </li>
+          <li>
+            <ul>
+               <li></li>
+               <li>oder</li>
+            </ul>
+         </li>
+         <li>
+            <ul>
+               <li></li>
+               <li>offer and promotion</li>
+            </ul>
+         </li>
+         <li>
+            <ul>
+               <li></li>
+               <li>privacy policy</li>
+            </ul>
+         </li>
+         <li>
+            <ul>
+               <li></li>
+               <li>security</li>
+            </ul>
+         </li>
+         <li><a href="">sign-out</a> </li>
+       </ul>
+       <img onclick="closeMenuFuction()" src="{{ url_for('static', filename='img/menu-img.png') }}" alt="">
+   </div>
+   <div class="home-header">
+    <h1>Delicious<br> food for you</h1>
+   </div>
+   <div class="search-bar">
+        <input placeholder="search" type="text">
+        <ion-icon name="search"></ion-icon>
+   </div>
+   <div class="list-items">
+        <ul id="myDIV">
+            <li class="btn active">Commrade</li>
+            <li class="btn ">Rich Kid</li>
+            <li class="btn ">Oga Boss</li>
+        </ul>
+        <div class="fooditems">
+            <div class="wrapper">
+                <div class="items">
+                    <img src="{{ url_for('static', filename='img/banner-img.png') }}" alt="">
+                    <span class="name">Pizza</span>
+                    <span class="price">N5000</span>
+                </div>
+                <div class="items">
+                  <img src="{{ url_for('static', filename='img/banner-img.png') }}" alt="">
+                  <span class="name">Pizza</span>
+                  <span class="price">N5000</span>
+              </div>
+              <div class="items">
+               <img src="{{ url_for('static', filename='img/banner-img.png') }}" alt="">
+               <span class="name">Pizza</span>
+               <span class="price">N5000</span>
+           </div>
+           <div class="items">
+            <img src="{{ url_for('static', filename='img/banner-img.png') }}" alt="">
+            <span class="name">Pizza</span>
+            <span class="price">N5000</span>
+        </div>
+            </div>
+        </div>
+   </div>
+   <footer>
+        <ul id="ikw">
+            <li><a class="menu actives" href="/home"><ion-icon name="home"></ion-icon></a></li>
+            <li ><a class="menu" href="/authentication"><ion-icon name="person"></ion-icon></a></li>
+            <li ><a class="menu" href=""><ion-icon name="heart"></ion-icon></a></li>
+            <li ><a class="menu" href=""><ion-icon name="timer"></ion-icon></a></li>
+        </ul>
+   </footer>
+   <script>
+      
+      var header = document.getElementById("myDIV");
+      var btns = header.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+      }
+
+   </script>
+{% endblock %}

@@ -1,0 +1,62 @@
+.authentication{
+   overflow: hidden;
+   width: 100%;
+   background-color: white;
+   border-radius:0px 0px 50px 50px;
+   box-shadow: 0 .2em 1em rgba(0, 0, 0, 0.315);
+}
+.authentication img{
+   width: 70%;
+   transform: translateX(20%)
+}
+.authentication ul{
+   display: flex;
+   margin: 0px 0px 0px 50px;
+}
+.authentication ul li{
+   margin:0px 15px;
+   font-weight: 600;
+   padding: 5px 20px;
+}
+.authentication ul li:last-child{
+   margin-left: 60px;   
+}
+.activa, .authentication ul li:hover{
+   border-bottom: 3px  solid #ff4500;
+}
+.forms{
+   overflow: hidden;
+   width: 90%;
+   margin-left: 39px;
+   margin-top: 50px;
+}
+.forms form{
+   display: grid;
+}
+.input1{
+   padding: 10px;
+   width: 80%;
+   font-size: 1em;
+   margin-top: 50px;
+   border-bottom:1px  solid var(--black);
+   background-color: rgb(241, 241, 241);
+}
+.container{
+   overflow: hidden;
+}
+.submit-button{
+   background-image: linear-gradient(var(--orange) 50%, rgb(170, 45, 0));
+   color: white;
+   padding: 30px;
+   border-radius: 30px;
+   margin-top: 35%;
+   width: 90%;
+}
+h3 {
+   position: relative;
+   top: 200%;
+   color: var(--br);
+}
+.form2{
+   display: none;
+}
